@@ -15,10 +15,10 @@ We ran into a challenge dealing with some missing functionality in the VPC defin
     "BlockDeviceMappings" : [
       {
         "DeviceName" : {
-	  "Fn::FindInMap": [
-	    "RootDevices", { "Ref": "EC2VirtualizationType" }, "Name"
-	  ]
-	},
+          "Fn::FindInMap": [
+            "RootDevices", { "Ref": "EC2VirtualizationType" }, "Name"
+          ]
+        },
         "Ebs" : { "VolumeSize" : "100" }
       }
     ]
